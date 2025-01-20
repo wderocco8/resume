@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Gabriel Sison
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage[default]{cantarell} %% Use option "defaultsans" to use cantarell as sans serif only
+\usepackage[T1]{fontenc}
+\usepackage{amssymb}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-3pt}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}
+{\end{itemize}\vspace{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+% \sffamily
+    \begin{center}
+        % NAME
+        {\huge \scshape \textbf{\href{https://cs-people.bu.edu/wderocco/}{William De Rocco }}}
+        
+        \small
+         % PHONE
+        \raisebox{-0.2\height}\faPhone\  \underline{203-209-1600} ~ 
+        % EMAIL
+        \href{mailto:wderocco@bu.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{wderocco@bu.edu}} ~ 
+        % LINKEDIN
+        \href{https://www.linkedin.com/in/william-derocco/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/william-derocco}}  ~
+        % GITHUB
+        \href{https://www.github.com/wderocco8}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/wderocco8}}
+        % LOCATION
+        \raisebox{-0.2\height}\faMapPin \ \underline{Boston, MA}
+    \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+  
+    % MAIN INFORMATION
+    \resumeSubheading
+    {Boston University}{Boston, MA}
+    {B.A.  in Computer Science (CS), Minor in Economics, GPA 3.83/4.00}{Expected May 2025}
+        % BULLET POINTS
+        \resumeItemListStart
+            \resumeItem{\textbf{Selected Coursework:} Data Structures \& Algorithms (Java), Empirical Economics (STATA), Intro to Machine Learning \& Artificial Intelligence (Python, Tensorflow), Computer Systems (Unix, Bash, Assembly, C), Software Engineering}
+        \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{SKILLS}
+
+    \vspace{-7pt}
+    \begin{itemize}
+    [leftmargin=0.15in, label={}]\small{\item{
+        % LANGUAGES
+        \textbf{Languages}{: Python, JavaScript, TypeScript, YAML, Bash/Unix, Java, Kotlin, HTML, CSS, Go, SQL, C, Assembly, STATA} \\
+        % TOOLS
+        \textbf{Tools}{: Git, Figma, Docker, Postman, AWS, Google Cloud Platform, Heroku, Netlify, Microsoft Office, Google Suite, Android} \\
+        % TECHNOLOGIES
+        \textbf{Other}{: React.js, Node.js, Express.js, Next.js, Dotnet, Spring, Pandas, TensorFlow, NumPy, MongoDB, Firebase, Django} \\}}
+    \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{WORK EXPERIENCE}
+    \resumeSubHeadingListStart
+
+        % COMPANY 1
+        \resumeSubheading
+        {Boston University -- Department of Computer Science}{Boston, MA}
+            % POSITION 1
+            {Undergraduate Teaching Assistant}{Jan 2022 -- Present}
+            \resumeItemListStart
+                \resumeItem{Tutor 450+ students on algorithms, data analytics, and web development using \textbf{Python}, \textbf{HTML}, \textbf{Pandas}, and \textbf{Django}.}
+
+                \resumeItem{Configure \textbf{Gradescope unittest} software to efficiently review, test, and grade \textbf{1200+} code samples per semester, contributing to \textbf{>30\%} of instructor feedback and directly enhancing students’ coding skills and practices.}
+            \resumeItemListEnd
+
+        % COMPANY 2
+        \resumeSubheading
+        {Rhapsody Health}{Boston, MA}
+            % POSITION 1
+            {Full Stack Software Engineering Intern}{May 2024 -- Aug 2024}
+            \resumeItemListStart
+                % soft skills here (teamwork across timezones, peer programming, learned best practices*, code reviews*...)
+                % keywords: cross-functional, stakeholders,
+                \resumeItem{Collaborated with an internationally distributed team using \textbf{Jira} and \textbf{FigJam} for \textbf{project planning} and \textbf{design} sprints.}
+
+                % IN PROGRESS
+                % \resumeItem{Worked with cross-functional leaders in product, engineering, and strategy to better understand the challenges of health-IT, particularly data duplication and identity management. Gained insights into how Rhapsody addresses these issues by leveraging machine learning algorithms and robust databases of nicknames and cell numbers to standardize EMPI (Enterprise Master Patient Index) data.}
+
+                % better pipeline (no circular deps), improved logging utility from containerization, easier to develop
+                \resumeItem{Established a \textbf{Docker} container-driven workflow, standardizing local development, simplifying \textbf{Bitbucket} CI/CD pipeline, and improving usability of existing \textbf{Kubernetes} logging.}
+
+                \resumeItem{Developed a debounced keyword-based graph search, improving UX by reducing input lag during component filtering.}
+            \resumeItemListEnd
+            
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{PROJECTS} 
+    \resumeSubHeadingListStart
+        
+        % Project 1
+        \resumeProjectHeading
+        {\href{https://grub-gallery.vercel.app}{GrubGallery \faExternalLink*}}
+        % Date
+        {January 2024}
+        % TODO: rewrite this section...
+        \resumeItemListStart
+            \resumeItem{Deployed \textbf{decoupled}, food curating web application on \textbf{Vercel}, enabling authenticated users to effortlessly search, save, and filter personalized recipes.}
+
+            \resumeItem{Integrated \textbf{Spoonacular} and \textbf{Google Calendar} APIs for complex recipe/dietary searches and syncing cooking events.}
+
+            \resumeItem{Designed wireframes with \textbf{Figma} and built responsive UI/UX using \textbf{Tailwind CSS} and \textbf{Styled Components}.}
+        \resumeItemListEnd
+
+        % Project 2
+        \resumeProjectHeading
+        {\href{https://devpost.com/software/bu-calsync-exporting-studentlink-to-google-calendar}{BU GCal Sync \faExternalLink* \normalfont{| \textit{Finalist - Best Use of Google Cloud, BostonHacks}} }}
+        % Date
+        {Nov 2023}
+        \resumeItemListStart
+            \resumeItem{Programmed chrome extension using \textbf{JavaScript}, \textbf{HTML}, \textbf{CSS}, and \textbf{Google API}s enabling users to seamlessly authenticate with \textbf{OAuth 2.0} and export their class schedule to \textbf{Google Calendar} with the click of a button.}
+            
+            \resumeItem{Streamlined user productivity and security by directing them to log in via \textbf{\href{https://www.bu.edu/online/student-resources/student-link/}{BU StudentLink}} to directly parse their courses.}
+
+        \resumeItemListEnd
+
+        % Project 3
+        \resumeProjectHeading
+        {\href{https://devpost.com/software/diabetes-risk-model-for-native-women}{Diabetes Risk Model for Native Women \faExternalLink* \normalfont{| \textit{1st Place, BostonHacks}} }}
+        % Date
+        {Apr 2022}
+        \resumeItemListStart
+            \resumeItem{Developed diabetes mellitus risk calculator using \textbf{RandomForestClassifier} and \textbf{GridSearchCV} hyper-tuning library, and trained on \textbf{Kaggle}’s Pima Indians Diabetes Database to reach an $\mathbf{R^2}$ of \textbf{0.74}.}
+            
+            \resumeItem{Designed interactive web application utilizing \textbf{Streamlit} framework to collect user data, and seamlessly integrated our ML model with \textbf{Pickle}, enabling Native American women to readily self-diagnose their diabetic risk.}
+        \resumeItemListEnd
+        
+        
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  LEADERSHIP  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{LEADERSHIP}
+    \resumeSubHeadingListStart
+    
+    % ORGANIZATION 1
+    \resumeSubheading
+    {Phi Chi Theta - Professional Business Fraternity}{Boston, MA}
+        % Position 1
+        {VP of Technology \normalfont{|} \href{https://github.com/whyphi}{WhyPhi \faExternalLink*}}
+        {Jan 2024 -- May 2024}
+        \resumeItemListStart
+            \resumeItem{Managed team of \textbf{12} members to plan and execute a \textbf{40+} person community-wide \textbf{HackerRank} coding competition.}
+            % \resumeItem{Developed internal website (WhyPhi) to accept \textbf{applications} and handle \textbf{100+} users, cutting costs by \textbf{\$276} per year.}
+            
+            \resumeItem{Developed an application and attendance system (WhyPhi) serving \textbf{200+} users, and cutting costs by \textbf{\$276} per year.}
+            
+            \resumeItem{Leveraged \textbf{AWS Chalice}'s layered architecture to fetch, parse, and analyze data, supporting diversity promotion.}
+        \resumeItemListEnd
+    
+        % POSITION 2
+        \resumeSubheadingContinue
+        {VP of Fundraising}{Jan 2023 -- May 2023}
+        \resumeItemListStart
+            \resumeItem{Led a team of \textbf{10} members across three sub-teams (Digital Fundraising, In-person Fundraising, and Philanthropy) to successfully coordinate and execute \textbf{seven} events, raising over \textbf{\$1.2k} for the fraternity.}
+            \resumeItem{Demonstrated and enhanced strong organizational leadership skills by effectively managing each initiative, collaborating with various teams of PCT and \textbf{external} organizations, and hosted weekly sprints to achieve our semesterly goals.}
+        \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+ 
+\end{document}
