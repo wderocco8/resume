@@ -1,0 +1,47 @@
+EDUCATION
+Boston University Boston, MA
+B.A. in Computer Science (CS), Minor in Economics, GPA 3.85/4.00 Expected May 2025
+• Selected Coursework: Data Structures & Algorithms (Java), Empirical Economics (STATA), Intro to Machine Learning &
+Artificial Intelligence (Python, Tensorflow), Computer Systems (Unix, Bash, Assembly, C), Software Engineering
+SKILLS
+Languages: Python, JavaScript, TypeScript, YAML, Bash/Unix, Java, Kotlin, HTML, CSS, Go, SQL, C, Assembly, STATA
+Tools: Git, Figma, Docker, Postman, AWS, Google Cloud Platform, Heroku, Netlify, Microsoft Office, Google Suite, Android
+Other: React.js, Node.js, Express.js, Next.js, Dotnet, Spring, Pandas, TensorFlow, NumPy, MongoDB, Firebase, Django
+WORK EXPERIENCE
+Boston University – Department of Computer Science Boston, MA
+Undergraduate Teaching Assistant Jan 2022 – Present
+• Tutor 450+ students on algorithms, data analytics, and web development using Python, HTML, Pandas, and Django.
+• Configure Gradescope unittest software to efficiently review, test, and grade 1200+ code samples per semester,
+contributing to >30% of instructor feedback and directly enhancing students’ coding skills and practices.
+Rhapsody Health Boston, MA
+Full Stack Software Engineering Intern May 2024 – Aug 2024
+• Collaborated with an internationally distributed team using Jira and FigJam for project planning and design sprints.
+• Established a Docker container-driven workflow, standardizing local development, simplifying Bitbucket CI/CD pipeline,
+and improving usability of existing Kubernetes logging.
+• Developed a debounced keyword-based graph search, improving UX by reducing input lag during component filtering.
+PROJECTS
+GrubGallery 2 January 2024
+• Deployed decoupled, food curating web application on Vercel, enabling authenticated users to effortlessly search, save,
+and filter personalized recipes.
+• Integrated Spoonacular and Google Calendar APIs for complex recipe/dietary searches and syncing cooking events.
+• Designed wireframes with Figma and built responsive UI/UX using Tailwind CSS and Styled Components.
+BU GCal Sync 2 | Finalist - Best Use of Google Cloud, BostonHacks Nov 2023
+• Programmed chrome extension using JavaScript, HTML, CSS, and Google APIs enabling users to seamlessly
+authenticate with OAuth 2.0 and export their class schedule to Google Calendar with the click of a button.
+• Streamlined user productivity and security by directing them to log in via BU StudentLink to directly parse their courses.
+Diabetes Risk Model for Native Women 2 | 1st Place, BostonHacks Apr 2022
+• Developed diabetes mellitus risk calculator using RandomForestClassifier and GridSearchCV hyper-tuning library, and
+trained on Kaggle’s Pima Indians Diabetes Database to reach an R2 of 0.74.
+• Designed interactive web application utilizing Streamlit framework to collect user data, and seamlessly integrated our
+ML model with Pickle, enabling Native American women to readily self-diagnose their diabetic risk.
+LEADERSHIP
+Phi Chi Theta - Professional Business Fraternity Boston, MA
+VP of Technology | WhyPhi 2 Jan 2024 – May 2024
+• Managed team of 12 members to plan and execute a 40+ person community-wide HackerRank coding competition.
+• Developed an application and attendance system (WhyPhi) serving 200+ users, and cutting costs by $276 per year.
+• Leveraged AWS Chalice’s layered architecture to fetch, parse, and analyze data, supporting diversity promotion.
+VP of Fundraising Jan 2023 – May 2023
+• Led a team of 10 members across three sub-teams (Digital Fundraising, In-person Fundraising, and Philanthropy) to
+successfully coordinate and execute seven events, raising over $1.2k for the fraternity.
+• Demonstrated and enhanced strong organizational leadership skills by effectively managing each initiative, collaborating
+with various teams of PCT and external organizations, and hosted weekly sprints to achieve our semesterly goals.
