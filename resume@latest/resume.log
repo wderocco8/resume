@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.20)  3 APR 2025 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.20)  15 SEP 2025 17:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/willi/Desktop/General/BostonUniversity/FullTime/documents/recruiting/resume/resume@latest/resume
-(/Users/willi/Desktop/General/BostonUniversity/FullTime/documents/recruiting/resume/resume@latest/resume.tex
+**/Users/willi/Desktop/general/full-time/documents/recruiting/resume/resume@latest/resume
+(/Users/willi/Desktop/general/full-time/documents/recruiting/resume/resume@latest/resume.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -473,18 +473,18 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: 42E420B913B7A7F7472D8DC0A26AEF8F;458.
  ) 
 Here is how much of TeX's memory you used:
- 15182 strings out of 474116
- 259333 string characters out of 5743682
- 1960187 words of memory out of 5000000
- 37320 multiletter control sequences out of 15000+600000
- 576116 words of font info for 97 fonts, out of 8000000 for 9000
+ 15171 strings out of 474116
+ 259170 string characters out of 5743682
+ 1962187 words of memory out of 5000000
+ 37314 multiletter control sequences out of 15000+600000
+ 574260 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,526b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/gnome/cantarell/Cantarell-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/gnome/cantarell/Cantarell-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/gnome/cantarell/Cantarell-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on resume.pdf (1 page, 130986 bytes).
+ 75i,11n,79p,510b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/gnome/cantarell/Cantarell-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/gnome/cantarell/Cantarell-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/gnome/cantarell/Cantarell-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+Output written on resume.pdf (1 page, 114349 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  7 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
