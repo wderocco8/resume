@@ -55,8 +55,7 @@
   }
 }
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-3pt}
-\item
+  \vspace{-3pt}\item
   \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & \textbf{\small #2} \\
     \textit{\small#3} & \textit{\small #4} \\
@@ -69,8 +68,7 @@
   \end{tabular*}\vspace{-7pt}
 }
 \newcommand{\resumeProjectHeading}[2]{
-  \vspace{-3pt}
-\item
+  \vspace{-3pt}\item
   \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & \textbf{\small #2} \\
   \end{tabular*}\vspace{-7pt}
@@ -78,15 +76,11 @@
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeSubHeadingListStart}{
-\begin{itemize}[leftmargin=0.0in, label={}]}
-    \newcommand{\resumeSubHeadingListEnd}{
-\end{itemize}}
-\newcommand{\resumeItemListStart}{
-\begin{itemize}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
     \newcommand{\resumeItemListEnd}
-    {
-\end{itemize}\vspace{0pt}}
+{\end{itemize}\vspace{0pt}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -210,8 +204,7 @@
 
 \vspace{-7pt}
 \begin{itemize}
-    [leftmargin=0.15in, label={}]\small{
-    \item{
+    [leftmargin=0.15in, label={}]\small{\item{
         \textbf{Languages}{: Go, TypeScript, Python, SQL, C\#, Java, Bash/Unix, YAML, HTML/CSS} \\
         \textbf{Infrastructure \& Tools}{: Kubernetes, Docker, Azure, AWS (Lambda, S3, SQS, Textract), PostgreSQL, GitHub Actions, GCP} \\
     \textbf{Frameworks}{: .NET, React.js, Next.js, Node.js, Django, Drizzle ORM} \\}}

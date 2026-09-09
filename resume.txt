@@ -3,7 +3,7 @@ William De Rocco
 
 # EXPERIENCE
 
-John Hancock — GRO Rotational Program — Boston, MA
+John Hancock — Technology Rotational Program — Boston, MA
 Associate Software Engineer — Fraud, Waste & Abuse Platform | June 2026 – Present
 • Build and operate a fleet of Go microservices on Kubernetes that process reimbursement claims for fraud, waste,
   and abuse detection — a pipeline recovering eight figures in improper payments annually.
@@ -13,12 +13,11 @@ Associate Software Engineer — Fraud, Waste & Abuse Platform | June 2026 – Pr
 • Designed a structured, type-safe Go rules engine replacing a complex third-party (Grules) engine; validated
   end-to-end and approved for release, resolving 5 known production defects and cutting rule authoring from days
   to hours.
-• Found and resolved 8+ production defects, including a race condition duplicating retry jobs across three
-  AKS replicas.
+• Found and resolved 8+ production defects, including a race condition duplicating retry jobs across AKS replicas.
 
 Associate Software Engineer — JH AutoForge | June 2025 – June 2026
-• One of two founding engineers on a greenfield AI document pipeline (.NET, SQL, Azure OpenAI) converting 200+ page
-  product specs into reviewable Jira user stories, cutting analyst effort an estimated 80–90%; now adopted
+• One of two founding engineers on a greenfield AI document pipeline (.NET, SQL, Azure OpenAI) converting 200+
+  page product specs into reviewable Jira user stories, cutting analyst effort an estimated 60–70%; now adopted
   by 4+ teams.
 • Architected the retrieval pipeline — OCR extraction, keyword-driven chunking, cross-document contextual mapping,
   and batched context-scoped LLM calls — to minimize hallucination on inputs far exceeding the model context window.
@@ -27,10 +26,11 @@ Associate Software Engineer — JH AutoForge | June 2025 – June 2026
 
 Rhapsody Health — Boston, MA
 Full Stack Software Engineering Intern | May 2024 – Aug 2024
+• Collaborated with an internationally distributed team using Jira and FigJam for project planning and design
+  sprints.
 • Established a Docker container-driven workflow, standardizing local development and simplifying the Bitbucket
   CI/CD pipeline.
-• Built a debounced keyword-based graph search over the component canvas, eliminating input lag during
-  filtering.
+• Built a debounced keyword-based graph search over the component canvas, eliminating input lag during filtering.
 
 Boston University — Department of Computer Science — Boston, MA
 Undergraduate Teaching Assistant | Jan 2022 – May 2025
@@ -39,14 +39,15 @@ Undergraduate Teaching Assistant | Jan 2022 – May 2025
 
 # PROJECTS
 
-backtab | TypeScript, React, Plasmo, Chrome MV3 | 2026 – Present
+backtab | TypeScript, React, Plasmo, Chrome MV3 | 2025 – Present
 github.com/wderocco8/back-tab
 • Chrome extension reconstructing a browsing session as a navigable directed graph, letting users re-enter
   abandoned branches that linear back-button history discards.
-• Reconciles Chrome's webNavigation, history, and tabs APIs with a content-script tracker to model SPA
-  transitions and A→B→A revisits the native history API collapses.
+• Reconciles chrome.webNavigation with an in-page window.navigation tracker to capture same-document SPA route
+  changes onCommitted never fires for, filtering both streams so one click yields one node.
 
 Expense Report Generator | Next.js, AWS (S3, SQS, Lambda, Textract), PostgreSQL | 2026 – Present
+github.com/wderocco8/expense-report
 • Generates company-specific expense reports from receipt photos against user-defined Excel schemas, built for a
   user whose employer mandates a fixed format off-the-shelf tools cannot produce.
 • Iterated through four architectures — synchronous, fire-and-forget, event-driven S3/SQS/Lambda, then two-phase
