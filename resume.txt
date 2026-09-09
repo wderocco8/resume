@@ -1,68 +1,69 @@
-# EDUCATION
+William De Rocco
+203-209-1600 | wderocco@bu.edu | linkedin.com/in/william-derocco | github.com/wderocco8 | New York, NY
 
-Boston University Boston, MA
-B.A. in Computer Science (CS), Minor in Economics, GPA 3.85/4.00 Expected May 2025
-• Selected Coursework: Data Structures & Algorithms (Java), Empirical Economics (STATA), Intro to Machine Learning &
-Artificial Intelligence (Python, Tensorflow), Computer Systems (Unix, Bash, Assembly, C), Software Engineering
+# EXPERIENCE
 
-# SKILLS
+John Hancock — Boston, MA
+Software Engineer — Fraud, Waste & Abuse Platform | June 2026 – Present
+• Build and operate a fleet of Go microservices on Kubernetes that process reimbursement claims for fraud, waste,
+  and abuse detection — a pipeline that recovered $9M in July 2026 alone.
+• Root-caused 560 SLA violations: ~150 traced to a Unicode encoding mismatch between Azure Blob Storage and Go's
+  net/http that silently dropped uploads, the rest to a 60/hr throughput ceiling; shipped both fixes with
+  monitoring to validate.
+• Designed a structured, type-safe Go rules engine replacing a convoluted third-party (grules) engine; validated
+  end-to-end and approved for release, resolving 5 known production defects and cutting rule authoring from days
+  to hours.
+• Diagnosed and resolved 8+ production defects, including a race condition duplicating retry jobs across three
+  Kubernetes replicas.
 
-Languages: Python, JavaScript, TypeScript, YAML, Bash/Unix, Java, Kotlin, HTML, CSS, Go, SQL, C, Assembly, STATA
-Tools: Git, Figma, Docker, Postman, AWS, Google Cloud Platform, Heroku, Netlify, Supabase, Google Suite, Android
-Other: React.js, Node.js, PostgreSQL, Next.js, Dotnet, Spring, Pandas, TensorFlow, NumPy, MongoDB, Firebase, Django
+Associate Software Engineer — JH AutoForge | June 2025 – June 2026
+• One of two founding engineers on a greenfield AI document pipeline (.NET, SQL, Azure OpenAI) converting 200–300
+  page product specs into reviewable Jira user stories, cutting analyst effort an estimated 80–90%; now adopted
+  by 4+ teams.
+• Architected the retrieval pipeline — OCR extraction, keyword-driven chunking, cross-document contextual mapping,
+  and batched context-scoped LLM calls — to minimize hallucination on inputs far exceeding the model context window.
+• Owned the team's database workflow, driving migration from containerized local mssql to shared lower-tier
+  environments and establishing migration/rollback conventions enforced pre-merge.
 
-# WORK EXPERIENCE
+Rhapsody Health — Boston, MA
+Full Stack Software Engineering Intern | May 2024 – Aug 2024
+• Established a Docker container-driven workflow, standardizing local development, simplifying the Bitbucket
+  CI/CD pipeline, and improving usability of existing Kubernetes logging.
 
-John Hancock Boston, MA
-Associate Full Stack Software Engineer June 2025 – Present
-• Architecting a greenfield full-stack solution to enable Business Systems Analysts to automatically convert product
-specification documents into contextual Jira user stories, with an expected reduction in manual effort of 80-90%.
-• Implementing core backend services in .NET and SQL including repository-pattern APIs, document processing pipelines,
-and Azure OpenAI prompting logic, resulting in accurate, production-ready user story generation.
-• Collaborating cross-functionally with the AKS platform team to debug and resolve Kubernetes deployment issues,
-gaining direct log access and independently fixing pod-level errors to ensure system reliability.
-
-Boston University – Department of Computer Science Boston, MA
-Undergraduate Teaching Assistant Jan 2022 – May 2025
-• Tutor 450+ students on algorithms, data analytics, and web development using Python, HTML, Pandas, and Django.
-• Configure Gradescope unittest software to efficiently review, test, and grade 1200+ code samples per semester,
-contributing to >30% of instructor feedback and directly enhancing students’ coding skills and practices.
-
-Rhapsody Health Boston, MA
-Full Stack Software Engineering Intern May 2024 – Aug 2024
-• Collaborated with an internationally distributed team using Jira and FigJam for project planning and design sprints.
-• Established a Docker container-driven workflow, standardizing local development, simplifying Bitbucket CI/CD pipeline,
-and improving usability of existing Kubernetes logging.
-• Developed a debounced keyword-based graph search, improving UX by reducing input lag during component filtering.
+Boston University — Department of Computer Science — Boston, MA
+Undergraduate Teaching Assistant | Jan 2022 – May 2025
+• Tutored 450+ students on algorithms, data analytics, and web development, and configured Gradescope test
+  automation to grade 1200+ code samples per semester.
 
 # PROJECTS
 
-GrubGallery 2 January 2024
-• Deployed decoupled, food curating web application on Vercel, enabling authenticated users to effortlessly search, save,
-and filter personalized recipes.
-• Integrated Spoonacular and Google Calendar APIs for complex recipe/dietary searches and syncing cooking events.
-• Designed wireframes with Figma and built responsive UI/UX using Tailwind CSS and Styled Components.
+backtab | TypeScript, React, Plasmo, Chrome MV3 | 2026 – Present
+github.com/wderocco8/back-tab
+• Chrome extension reconstructing a browsing session as a navigable directed graph, letting users re-enter
+  abandoned branches that linear back-button history discards.
+• Reconciles Chrome's webNavigation, history, and tabs APIs with a content-script tracker to model SPA
+  transitions and A→B→A revisits the native history API collapses.
+• Coordinates three Manifest V3 execution contexts (content script, service worker, extension UI) over a typed
+  message bus; React Flow and Dagre auto-layout.
 
-BU GCal Sync 2 | Finalist - Best Use of Google Cloud, BostonHacks Nov 2023
-• Programmed chrome extension using JavaScript, HTML, CSS, and Google APIs enabling users to seamlessly
-authenticate with OAuth 2.0 and export their class schedule to Google Calendar with the click of a button.
-• Streamlined user productivity and security by directing them to log in via BU StudentLink to directly parse their courses.
+Expense Report Generator | Next.js, AWS (S3, SQS, Lambda, Textract), PostgreSQL | 2026 – Present
+• SaaS generating company-specific expense reports from receipt photos against user-defined Excel schemas, for
+  users whose employers mandate fixed formats off-the-shelf tools cannot produce.
+• Iterated through four architectures — synchronous, fire-and-forget, event-driven S3/SQS/Lambda, then two-phase
+  Textract OCR plus LLM extraction — resolving Vercel serverless execution semantics and upstream rate limiting.
 
-Diabetes Risk Model for Native Women 2 | 1st Place, BostonHacks Apr 2022
-• Developed diabetes mellitus risk calculator using RandomForestClassifier and GridSearchCV hyper-tuning library, and
-trained on Kaggle’s Pima Indians Diabetes Database to reach an R2 of 0.74.
-• Designed interactive web application utilizing Streamlit framework to collect user data, and seamlessly integrated our
-ML model with Pickle, enabling Native American women to readily self-diagnose their diabetic risk.
+WhyPhi | Next.js, AWS Chalice, DynamoDB | 2024
+github.com/whyphi
+• Built and shipped an application and attendance platform serving 200+ users on a layered AWS Chalice backend,
+  cutting recurring tooling costs 60% annually and replacing three separate third-party services.
 
-# LEADERSHIP
+# SKILLS
 
-Phi Chi Theta - Professional Business Fraternity Boston, MA
-VP of Technology | WhyPhi 2 Jan 2024 – May 2024
-• Managed team of 12 members to plan and execute a 40+ person community-wide HackerRank coding competition.
-• Developed an application and attendance system (WhyPhi) serving 200+ users, and cutting costs by $276 per year.
-• Leveraged AWS Chalice’s layered architecture to fetch, parse, and analyze data, supporting diversity promotion.
-VP of Fundraising Jan 2023 – May 2023
-• Led a team of 10 members across three sub-teams (Digital Fundraising, In-person Fundraising, and Philanthropy) to
-successfully coordinate and execute seven events, raising over $1.2k for the fraternity.
-• Demonstrated and enhanced strong organizational leadership skills by effectively managing each initiative, collaborating
-with various teams of PCT and external organizations, and hosted weekly sprints to achieve our semesterly goals.
+Languages: Go, TypeScript, Python, SQL, C#, Java, Bash/Unix, YAML, HTML/CSS
+Infrastructure & Tools: Kubernetes, Docker, Azure, AWS (Lambda, S3, SQS, Textract), PostgreSQL, GitHub Actions, GCP
+Frameworks: .NET, React.js, Next.js, Node.js, Django, Drizzle ORM
+
+# EDUCATION
+
+Boston University — Boston, MA
+B.A. in Computer Science, Minor in Economics — GPA 3.86/4.00 | May 2025
