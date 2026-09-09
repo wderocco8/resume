@@ -108,7 +108,7 @@
 
         % COMPANY 1
         \resumeSubheading
-        {John Hancock}{Boston, MA}
+        {John Hancock \normalfont{\textemdash{} GRO Rotational Program}}{Boston, MA}
             % POSITION 2 (current)
             {Associate Software Engineer --- Fraud, Waste \& Abuse Platform}{June 2026 -- Present}
             \resumeItemListStart
@@ -139,7 +139,7 @@
             \resumeItemListStart
                 \resumeItem{Established a \textbf{Docker} container-driven workflow, standardizing local development, simplifying the \textbf{Bitbucket} CI/CD pipeline, and improving usability of existing \textbf{Kubernetes} logging.}
 
-                \resumeItem{Built a debounced keyword-based graph search over the pipeline component canvas, eliminating input lag during filtering.}
+                \resumeItem{Built a debounced keyword-based graph search over the component canvas, eliminating input lag during filtering.}
 
             \resumeItemListEnd
 
@@ -156,45 +156,37 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{PROJECTS} 
     \resumeSubHeadingListStart
-        
+
         % Project 1
         \resumeProjectHeading
-        {\href{https://codehive.buzz/}{CodeHive \faExternalLink* \normalfont{| \textit{Innovator, Technical Teammate}} }}
-        % Date
-        {Dec 2024}
+        {\href{https://github.com/wderocco8/back-tab}{backtab \faExternalLink* \normalfont{| \textit{TypeScript, React, Plasmo, Chrome MV3}} }}
+        {2026 -- Present}
         \resumeItemListStart
-        
-          \resumeItem{Led DevOps implementation by configuring \textbf{GitHub} branch protection, validating pull requests with a Docker build workflow, and implementing \textbf{CI/CD} with \textbf{GitHub Actions}, Google Cloud Platform \textbf{Cloud Run}, and \textbf{Artifact Registry}.}
+          \resumeItem{Chrome extension reconstructing a browsing session as a navigable \textbf{directed graph}, letting users re-enter abandoned branches that linear back-button history discards.}
 
-          \resumeItem{Implemented markdown/contextual questions, in-app notifications, and authentication on \textbf{Django} and \textbf{Supabase ORM} infrastructure spanning local and production environments.}
-
+          \resumeItem{Reconciles Chrome's \texttt{webNavigation}, \texttt{history}, and \texttt{tabs} APIs with a content-script tracker to model SPA transitions and A$\rightarrow$B$\rightarrow$A revisits the native history API collapses, across three \textbf{Manifest V3} execution contexts over a typed message bus.}
         \resumeItemListEnd
 
-        % ORGANIZATION 1
+        % Project 2
+        \resumeProjectHeading
+        {\href{https://github.com/wderocco8/expense-report}{Expense Report Generator \faExternalLink* \normalfont{| \textit{Next.js, AWS (S3, SQS, Lambda, Textract), PostgreSQL}}}}
+        {2026 -- Present}
+        \resumeItemListStart
+            \resumeItem{Generates company-specific expense reports from receipt photos against \textbf{user-defined Excel schemas}, built for a user whose employer mandates a fixed format off-the-shelf tools cannot produce.}
+
+            \resumeItem{Iterated through four architectures --- synchronous, fire-and-forget, \textbf{event-driven S3/SQS/Lambda}, then two-phase \textbf{Textract} OCR plus LLM extraction --- resolving Vercel serverless execution semantics and upstream rate limiting.}
+        \resumeItemListEnd
+
+        % Project 3
         \resumeProjectHeading
         {\href{https://github.com/whyphi}{WhyPhi \faExternalLink* \normalfont{| \textit{VP of Technology}} }}
-        % Date
         {Jan 2024 -- May 2024}
         \resumeItemListStart
             \resumeItem{Built and operated an application and attendance platform serving \textbf{200+} users on a layered \textbf{AWS Chalice} backend, retiring three paid third-party services and cutting recurring tooling costs \textbf{$\sim$60\%} annually.}
 
             \resumeItem{Led a team of \textbf{12} to plan and execute a \textbf{40+} person community-wide \textbf{HackerRank} coding competition.}
         \resumeItemListEnd
-        
-        
 
-        % Project 3
-        \resumeProjectHeading
-        {\href{https://devpost.com/software/bu-calsync-exporting-studentlink-to-google-calendar}{BU GCal Sync \faExternalLink* \normalfont{| \textit{Finalist - Best Use of Google Cloud, BostonHacks}} }}
-        % Date
-        {Nov 2023}
-        \resumeItemListStart
-            \resumeItem{Programmed chrome extension using \textbf{JavaScript}, \textbf{HTML}, \textbf{CSS}, and \textbf{Google API}s enabling users to seamlessly authenticate with \textbf{OAuth 2.0} and export their class schedule to \textbf{Google Calendar} with the click of a button.}
-            
-            \resumeItem{Streamlined user productivity and security by directing them to log in via \textbf{\href{https://www.bu.edu/online/student-resources/student-link/}{BU StudentLink}} to directly parse their courses.}
-
-        \resumeItemListEnd
-        
     \resumeSubHeadingListEnd
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%

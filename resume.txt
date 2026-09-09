@@ -3,18 +3,18 @@ William De Rocco
 
 # EXPERIENCE
 
-John Hancock — Boston, MA
-Software Engineer — Fraud, Waste & Abuse Platform | June 2026 – Present
+John Hancock — Technology Rotational Program — Boston, MA
+Associate Software Engineer — Fraud, Waste & Abuse Platform | June 2026 – Present
 • Build and operate a fleet of Go microservices on Kubernetes that process reimbursement claims for fraud, waste,
-  and abuse detection — a pipeline that recovered $9M in July 2026 alone.
+  and abuse detection — a pipeline recovering eight figures in improper payments annually.
 • Root-caused 560 SLA violations: ~150 traced to a Unicode encoding mismatch between Azure Blob Storage and Go's
   net/http that silently dropped uploads, the rest to a 60/hr throughput ceiling; shipped both fixes with
   monitoring to validate.
-• Designed a structured, type-safe Go rules engine replacing a convoluted third-party (grules) engine; validated
+• Designed a structured, type-safe Go rules engine replacing a complex third-party (grules) engine; validated
   end-to-end and approved for release, resolving 5 known production defects and cutting rule authoring from days
   to hours.
-• Diagnosed and resolved 8+ production defects, including a race condition duplicating retry jobs across three
-  Kubernetes replicas.
+• Found and resolved 8+ production defects, including a race condition duplicating retry jobs across three
+  AKS replicas.
 
 Associate Software Engineer — JH AutoForge | June 2025 – June 2026
 • One of two founding engineers on a greenfield AI document pipeline (.NET, SQL, Azure OpenAI) converting 200–300
@@ -29,6 +29,8 @@ Rhapsody Health — Boston, MA
 Full Stack Software Engineering Intern | May 2024 – Aug 2024
 • Established a Docker container-driven workflow, standardizing local development, simplifying the Bitbucket
   CI/CD pipeline, and improving usability of existing Kubernetes logging.
+• Built a debounced keyword-based graph search over the pipeline component canvas, eliminating input lag during
+  filtering.
 
 Boston University — Department of Computer Science — Boston, MA
 Undergraduate Teaching Assistant | Jan 2022 – May 2025
@@ -42,20 +44,20 @@ github.com/wderocco8/back-tab
 • Chrome extension reconstructing a browsing session as a navigable directed graph, letting users re-enter
   abandoned branches that linear back-button history discards.
 • Reconciles Chrome's webNavigation, history, and tabs APIs with a content-script tracker to model SPA
-  transitions and A→B→A revisits the native history API collapses.
-• Coordinates three Manifest V3 execution contexts (content script, service worker, extension UI) over a typed
-  message bus; React Flow and Dagre auto-layout.
+  transitions and A→B→A revisits the native history API collapses, across three Manifest V3 execution contexts
+  over a typed message bus.
 
 Expense Report Generator | Next.js, AWS (S3, SQS, Lambda, Textract), PostgreSQL | 2026 – Present
-• SaaS generating company-specific expense reports from receipt photos against user-defined Excel schemas, for
-  users whose employers mandate fixed formats off-the-shelf tools cannot produce.
+• Generates company-specific expense reports from receipt photos against user-defined Excel schemas, built for a
+  user whose employer mandates a fixed format off-the-shelf tools cannot produce.
 • Iterated through four architectures — synchronous, fire-and-forget, event-driven S3/SQS/Lambda, then two-phase
   Textract OCR plus LLM extraction — resolving Vercel serverless execution semantics and upstream rate limiting.
 
-WhyPhi | Next.js, AWS Chalice, DynamoDB | 2024
+WhyPhi | VP of Technology | Jan 2024 – May 2024
 github.com/whyphi
-• Built and shipped an application and attendance platform serving 200+ users on a layered AWS Chalice backend,
-  cutting recurring tooling costs 60% annually and replacing three separate third-party services.
+• Built and operated an application and attendance platform serving 200+ users on a layered AWS Chalice backend,
+  retiring three paid third-party services and cutting recurring tooling costs ~60% annually.
+• Led a team of 12 to plan and execute a 40+ person community-wide HackerRank coding competition.
 
 # SKILLS
 
