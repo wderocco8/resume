@@ -54,8 +54,9 @@
     {#1 \vspace{-3pt}}
   }
 }
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-3pt}\item
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-3pt}
+\item%
   \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & \textbf{\small #2} \\
     \textit{\small#3} & \textit{\small #4} \\
@@ -67,8 +68,9 @@
     \textit{\small#1} & \textit{\small #2} \\
   \end{tabular*}\vspace{-7pt}
 }
-\newcommand{\resumeProjectHeading}[2]{
-  \vspace{-3pt}\item
+\newcommand{\resumeProjectHeading}[2]{%
+  \vspace{-3pt}
+\item%
   \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & \textbf{\small #2} \\
   \end{tabular*}\vspace{-7pt}
@@ -76,11 +78,24 @@
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-    \newcommand{\resumeItemListEnd}
-{\end{itemize}\vspace{0pt}}
+% NOTE: the trailing %% on each line below is load-bearing, not decoration.
+% A newline inside a macro body expands to a space token; that space leaves TeX
+% in horizontal mode, so \begin{itemize} then forces \par and the list is
+% treated as starting a new paragraph (adding \partopsep). Measured cost when
+% a formatter reflows these: +67.9pt, which overflows the page. The %% swallows
+% the newline, so latexindent can reformat freely without changing output.
+\newcommand{\resumeSubHeadingListStart}{%
+  \begin{itemize}[leftmargin=0.0in, label={}]%
+    }
+    \newcommand{\resumeSubHeadingListEnd}{%
+  \end{itemize}%
+}
+\newcommand{\resumeItemListStart}{%
+  \begin{itemize}%
+    }
+    \newcommand{\resumeItemListEnd}{%
+  \end{itemize}\vspace{0pt}%
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -204,7 +219,8 @@
 
 \vspace{-7pt}
 \begin{itemize}
-    [leftmargin=0.15in, label={}]\small{\item{
+    [leftmargin=0.15in, label={}]\small{
+    \item{
         \textbf{Languages}{: Go, TypeScript, Python, SQL, C\#, Java, Bash/Unix, YAML, HTML/CSS} \\
         \textbf{Infrastructure \& Tools}{: Kubernetes, Docker, Azure, AWS (Lambda, S3, SQS, Textract), PostgreSQL, GitHub Actions, GCP} \\
     \textbf{Frameworks}{: .NET, React.js, Next.js, Node.js, Django, Drizzle ORM} \\}}
