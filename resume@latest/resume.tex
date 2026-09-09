@@ -50,172 +50,179 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\resumeItem}[1]{
-  \item\small{
+\item\small{
     {#1 \vspace{-3pt}}
   }
 }
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-3pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+  \vspace{-3pt}
+\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
 }
 \newcommand{\resumeSubheadingContinue}[2]{
   \vspace{-3pt}
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
 }
 \newcommand{\resumeProjectHeading}[2]{
-  \vspace{-3pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+  \vspace{-3pt}
+\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
 }
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}
-{\end{itemize}\vspace{0pt}}
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=0.0in, label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}}
+\newcommand{\resumeItemListStart}{
+\begin{itemize}}
+    \newcommand{\resumeItemListEnd}
+    {
+\end{itemize}\vspace{0pt}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 % \sffamily
-    \begin{center}
-        % NAME
-        {\huge \scshape \textbf{\href{https://william-derocco.netlify.app/}{William De Rocco }}}
-        
-        \small
-         % PHONE
-        \raisebox{-0.2\height}\faPhone\  \underline{203-209-1600} ~ 
-        % EMAIL
-        \href{mailto:wderocco@bu.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{wderocco@bu.edu}} ~ 
-        % LINKEDIN
-        \href{https://www.linkedin.com/in/william-derocco/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/william-derocco}}  ~
-        % GITHUB
-        \href{https://www.github.com/wderocco8}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/wderocco8}}
-        % LOCATION
-        \raisebox{-0.2\height}\faMapPin \ \underline{New York, NY}
-    \end{center}
+\begin{center}
+  % NAME
+  {\huge \scshape \textbf{\href{https://william-derocco.netlify.app/}{William De Rocco }}}
+
+  \small
+  % PHONE
+  \raisebox{-0.2\height}\faPhone\  \underline{203-209-1600} ~
+  % EMAIL
+  \href{mailto:wderocco@bu.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{wderocco@bu.edu}} ~
+  % LINKEDIN
+  \href{https://www.linkedin.com/in/william-derocco/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/william-derocco}}  ~
+  % GITHUB
+  \href{https://www.github.com/wderocco8}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/wderocco8}}
+  % LOCATION
+  \raisebox{-0.2\height}\faMapPin \ \underline{New York, NY}
+\end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{EXPERIENCE}
-    \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-        % COMPANY 1
-        \resumeSubheading
-        {John Hancock \normalfont{\textemdash{} Technology Rotational Program}}{Boston, MA}
-            % POSITION 2 (current)
-            {Associate Software Engineer --- Fraud, Waste \& Abuse Platform}{June 2026 -- Present}
-            \resumeItemListStart
-              \resumeItem{Build and operate a fleet of \textbf{Go} microservices on \textbf{Kubernetes} that process reimbursement claims for fraud, waste, and abuse detection --- a pipeline recovering \textbf{eight figures} in improper payments annually.}
+% COMPANY 1
+\resumeSubheading
+{John Hancock \normalfont{\textemdash{} Technology Rotational Program}}{Boston, MA}
+% POSITION 2 (current)
+{Associate Software Engineer --- Fraud, Waste \& Abuse Platform}{June 2026 -- Present}
+\resumeItemListStart
+\resumeItem{Build and operate a fleet of \textbf{Go} microservices on \textbf{Kubernetes} that process reimbursement claims for fraud, waste, and abuse detection --- a pipeline recovering \textbf{eight figures} in improper payments annually.}
 
-              \resumeItem{Root-caused \textbf{560} SLA violations: \textbf{$\sim$150} traced to a Unicode encoding mismatch between \textbf{Azure Blob Storage} and Go's \texttt{net/http} that silently dropped uploads, the rest to a 60/hr throughput ceiling; shipped both fixes with monitoring to validate.}
+\resumeItem{Root-caused \textbf{560} SLA violations: \textbf{$\sim$150} traced to a Unicode encoding mismatch between \textbf{Azure Blob Storage} and Go's \texttt{net/http} that silently dropped uploads, the rest to a 60/hr throughput ceiling; shipped both fixes with monitoring to validate.}
 
-              \resumeItem{Designed a structured, \textbf{type-safe Go rules engine} replacing a complex third-party (\texttt{Grules}) engine; validated end-to-end and approved for release, resolving \textbf{5} known production defects and cutting rule authoring from days to hours.}
+\resumeItem{Designed a structured, \textbf{type-safe Go rules engine} replacing a complex third-party (\texttt{Grules}) engine; validated end-to-end and approved for release, resolving \textbf{5} known production defects and cutting rule authoring from days to hours.}
 
-              \resumeItem{Found and resolved \textbf{8+} production defects, including a \textbf{race condition} duplicating retry jobs across various AKS replicas.}
-          \resumeItemListEnd
+\resumeItem{Found and resolved \textbf{8+} production defects, including a \textbf{race condition} duplicating retry jobs across various AKS replicas.}
+\resumeItemListEnd
 
-            % POSITION 1
-            \resumeSubheadingContinue
-            {Associate Software Engineer --- JH AutoForge}{June 2025 -- June 2026}
-            \resumeItemListStart
-              \resumeItem{One of \textbf{two founding engineers} on a greenfield AI document pipeline (\textbf{.NET}, \textbf{SQL}, \textbf{Azure OpenAI}) converting 200+ page product specs into reviewable Jira user stories, cutting analyst effort an estimated \textbf{60--70\%}; now adopted by \textbf{4+} teams.}
+% POSITION 1
+\resumeSubheadingContinue
+{Associate Software Engineer --- JH AutoForge}{June 2025 -- June 2026}
+\resumeItemListStart
+\resumeItem{One of \textbf{two founding engineers} on a greenfield AI document pipeline (\textbf{.NET}, \textbf{SQL}, \textbf{Azure OpenAI}) converting 200+ page product specs into reviewable Jira user stories, cutting analyst effort an estimated \textbf{60--70\%}; now adopted by \textbf{4+} teams.}
 
-              \resumeItem{Architected the retrieval pipeline --- OCR extraction, keyword-driven chunking, cross-document contextual mapping, and batched context-scoped LLM calls --- to minimize hallucination on inputs far exceeding the model context window.}
+\resumeItem{Architected the retrieval pipeline --- OCR extraction, keyword-driven chunking, cross-document contextual mapping, and batched context-scoped LLM calls --- to minimize hallucination on inputs far exceeding the model context window.}
 
-              \resumeItem{Owned the team's database workflow, driving migration from containerized local \textbf{mssql} to shared lower-tier environments and establishing migration/rollback conventions enforced pre-merge.}
-          \resumeItemListEnd
+\resumeItem{Owned the team's database workflow, driving migration from containerized local \textbf{mssql} to shared lower-tier environments and establishing migration/rollback conventions enforced pre-merge.}
+\resumeItemListEnd
 
-        % COMPANY 2
-        \resumeSubheading
-        {Rhapsody Health}{Boston, MA}
-            {Full Stack Software Engineering Intern}{May 2024 -- Aug 2024}
-            \resumeItemListStart
-                % soft skills here (teamwork across timezones, peer programming, learned best practices*, code reviews*...)
-                % keywords: cross-functional, stakeholders,
-                \resumeItem{Collaborated with an internationally distributed team using \textbf{Jira} and \textbf{FigJam} for \textbf{project planning} and \textbf{design} sprints.}
+% COMPANY 2
+\resumeSubheading
+{Rhapsody Health}{Boston, MA}
+{Full Stack Software Engineering Intern}{May 2024 -- Aug 2024}
+\resumeItemListStart
+% soft skills here (teamwork across timezones, peer programming, learned best practices*, code reviews*...)
+% keywords: cross-functional, stakeholders,
+\resumeItem{Collaborated with an internationally distributed team using \textbf{Jira} and \textbf{FigJam} for \textbf{project planning} and \textbf{design} sprints.}
 
-                % IN PROGRESS
-                % \resumeItem{Worked with cross-functional leaders in product, engineering, and strategy to better understand the challenges of health-IT, particularly data duplication and identity management. Gained insights into how Rhapsody addresses these issues by leveraging machine learning algorithms and robust databases of nicknames and cell numbers to standardize EMPI (Enterprise Master Patient Index) data.}
+% IN PROGRESS
+% \resumeItem{Worked with cross-functional leaders in product, engineering, and strategy to better understand the challenges of health-IT, particularly data duplication and identity management. Gained insights into how Rhapsody addresses these issues by leveraging machine learning algorithms and robust databases of nicknames and cell numbers to standardize EMPI (Enterprise Master Patient Index) data.}
 
-                % better pipeline (no circular deps), improved logging utility from containerization, easier to develop
-                \resumeItem{Established a \textbf{Docker} container-driven workflow, standardizing local development and simplifying the \textbf{Bitbucket} CI/CD pipeline.}
+% better pipeline (no circular deps), improved logging utility from containerization, easier to develop
+\resumeItem{Established a \textbf{Docker} container-driven workflow, standardizing local development and simplifying the \textbf{Bitbucket} CI/CD pipeline.}
 
-                \resumeItem{Built a debounced keyword-based graph search over the component canvas, eliminating input lag during filtering.}
+\resumeItem{Built a debounced keyword-based graph search over the component canvas, eliminating input lag during filtering.}
 
-            \resumeItemListEnd
+\resumeItemListEnd
 
-        % COMPANY 3
-        \resumeSubheading
-        {Boston University --- Department of Computer Science}{Boston, MA}
-            {Undergraduate Teaching Assistant}{Jan 2022 -- May 2025}
-            \resumeItemListStart
-                \resumeItem{Tutored \textbf{450+} students on algorithms, data analytics, and web development, and configured \textbf{Gradescope} test automation to grade \textbf{1200+} code samples per semester.}
-            \resumeItemListEnd
+% COMPANY 3
+\resumeSubheading
+{Boston University --- Department of Computer Science}{Boston, MA}
+{Undergraduate Teaching Assistant}{Jan 2022 -- May 2025}
+\resumeItemListStart
+\resumeItem{Tutored \textbf{450+} students on algorithms, data analytics, and web development, and configured \textbf{Gradescope} test automation to grade \textbf{1200+} code samples per semester.}
+\resumeItemListEnd
 
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{PROJECTS} 
-    \resumeSubHeadingListStart
+\section{PROJECTS}
+\resumeSubHeadingListStart
 
-        % Project 1
-        \resumeProjectHeading
-        {\href{https://github.com/wderocco8/back-tab}{backtab \faExternalLink* \normalfont{| \textit{TypeScript, React, Plasmo, Chrome MV3}} }}
-        {2025 -- Present}
-        \resumeItemListStart
-          \resumeItem{Chrome extension reconstructing a browsing session as a navigable \textbf{directed graph}, letting users re-enter abandoned branches that linear back-button history discards.}
+% Project 1
+\resumeProjectHeading
+{\href{https://github.com/wderocco8/back-tab}{backtab \faExternalLink* \normalfont{| \textit{TypeScript, React, Plasmo, Chrome MV3}} }}
+{2025 -- Present}
+\resumeItemListStart
+\resumeItem{Chrome extension reconstructing a browsing session as a navigable \textbf{directed graph}, letting users re-enter abandoned branches that linear back-button history discards.}
 
-          \resumeItem{Reconciles \texttt{chrome.webNavigation} with an in-page \texttt{window.navigation} tracker to capture same-document SPA route changes \texttt{onCommitted} never fires for, filtering both streams so one click yields one node.}
-        \resumeItemListEnd
+\resumeItem{Reconciles \texttt{chrome.webNavigation} with an in-page \texttt{window.navigation} tracker to capture same-document SPA route changes \texttt{onCommitted} never fires for, filtering both streams so one click yields one node.}
+\resumeItemListEnd
 
-        % Project 2
-        \resumeProjectHeading
-        {\href{https://github.com/wderocco8/expense-report}{Expense Report Generator \faExternalLink* \normalfont{| \textit{Next.js, AWS (S3, SQS, Lambda, Textract), PostgreSQL}}}}
-        {2026 -- Present}
-        \resumeItemListStart
-            \resumeItem{Generates company-specific expense reports from receipt photos against \textbf{user-defined Excel schemas}, built for a user whose employer mandates a fixed format off-the-shelf tools cannot produce.}
+% Project 2
+\resumeProjectHeading
+{\href{https://github.com/wderocco8/expense-report}{Expense Report Generator \faExternalLink* \normalfont{| \textit{Next.js, AWS (S3, SQS, Lambda, Textract), PostgreSQL}}}}
+{2026 -- Present}
+\resumeItemListStart
+\resumeItem{Generates company-specific expense reports from receipt photos against \textbf{user-defined Excel schemas}, built for a user whose employer mandates a fixed format off-the-shelf tools cannot produce.}
 
-            \resumeItem{Iterated through four architectures --- synchronous, fire-and-forget, \textbf{event-driven S3/SQS/Lambda}, then two-phase \textbf{Textract} OCR plus LLM extraction --- resolving Vercel serverless execution semantics and upstream rate limiting.}
-        \resumeItemListEnd
+\resumeItem{Iterated through four architectures --- synchronous, fire-and-forget, \textbf{event-driven S3/SQS/Lambda}, then two-phase \textbf{Textract} OCR plus LLM extraction --- resolving Vercel serverless execution semantics and upstream rate limiting.}
+\resumeItemListEnd
 
-        % Project 3
-        \resumeProjectHeading
-        {\href{https://github.com/whyphi}{WhyPhi \faExternalLink* \normalfont{| \textit{Technical Lead \& VP of Technology}} }}
-        {Jan 2024 -- May 2025}
-        \resumeItemListStart
-            \resumeItem{Built and operated an application and attendance platform for a \textbf{126-member} organization, processing \textbf{314} rush applicants on a layered \textbf{AWS Chalice} backend; retired three paid third-party services, cutting recurring tooling costs \textbf{$\sim$60\%} annually.}
+% Project 3
+\resumeProjectHeading
+{\href{https://github.com/whyphi}{WhyPhi \faExternalLink* \normalfont{| \textit{Technical Lead \& VP of Technology}} }}
+{Jan 2024 -- May 2025}
+\resumeItemListStart
+\resumeItem{Built and operated an application and attendance platform for a \textbf{126-member} organization, processing \textbf{314} rush applicants on a layered \textbf{AWS Chalice} backend; retired three paid third-party services, cutting recurring tooling costs \textbf{$\sim$60\%} annually.}
 
-            \resumeItem{Led the project for over a year --- past the end of my elected VP term --- then recruited and onboarded a successor team and handed off ownership before graduating.}
+\resumeItem{Led the project for over a year --- past the end of my elected VP term --- then recruited and onboarded a successor team and handed off ownership before graduating.}
 
-            \resumeItem{Led a team of \textbf{12} to plan and execute a \textbf{40+} person community-wide \textbf{HackerRank} coding competition.}
-        \resumeItemListEnd
+\resumeItem{Led a team of \textbf{12} to plan and execute a \textbf{40+} person community-wide \textbf{HackerRank} coding competition.}
+\resumeItemListEnd
 
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{SKILLS}
 
-    \vspace{-7pt}
-    \begin{itemize}
-    [leftmargin=0.15in, label={}]\small{\item{
+\vspace{-7pt}
+\begin{itemize}
+    [leftmargin=0.15in, label={}]\small{
+    \item{
         \textbf{Languages}{: Go, TypeScript, Python, SQL, C\#, Java, Bash/Unix, YAML, HTML/CSS} \\
         \textbf{Infrastructure \& Tools}{: Kubernetes, Docker, Azure, AWS (Lambda, S3, SQS, Textract), PostgreSQL, GitHub Actions, GCP} \\
-        \textbf{Frameworks}{: .NET, React.js, Next.js, Node.js, Django, Drizzle ORM} \\}}
-    \end{itemize}
+    \textbf{Frameworks}{: .NET, React.js, Next.js, Node.js, Django, Drizzle ORM} \\}}
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{EDUCATION}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-    {Boston University}{Boston, MA}
-    {B.A. in Computer Science, Minor in Economics --- GPA 3.86/4.00}{May 2025}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{Boston University}{Boston, MA}
+{B.A. in Computer Science, Minor in Economics --- GPA 3.86/4.00}{May 2025}
+\resumeSubHeadingListEnd
 
 \end{document}
