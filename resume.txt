@@ -27,8 +27,8 @@ Associate Software Engineer — JH AutoForge | June 2025 – June 2026
 
 Rhapsody Health — Boston, MA
 Full Stack Software Engineering Intern | May 2024 – Aug 2024
-• Established a Docker container-driven workflow, standardizing local development, simplifying the Bitbucket
-  CI/CD pipeline, and improving usability of existing Kubernetes logging.
+• Established a Docker container-driven workflow, standardizing local development and simplifying the Bitbucket
+  CI/CD pipeline.
 • Built a debounced keyword-based graph search over the component canvas, eliminating input lag during
   filtering.
 

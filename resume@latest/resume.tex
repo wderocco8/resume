@@ -108,7 +108,7 @@
 
         % COMPANY 1
         \resumeSubheading
-        {John Hancock \normalfont{\textemdash{} GRO Rotational Program}}{Boston, MA}
+        {John Hancock \normalfont{\textemdash{} Technology Rotational Program}}{Boston, MA}
             % POSITION 2 (current)
             {Associate Software Engineer --- Fraud, Waste \& Abuse Platform}{June 2026 -- Present}
             \resumeItemListStart
@@ -118,14 +118,14 @@
 
               \resumeItem{Designed a structured, \textbf{type-safe Go rules engine} replacing a complex third-party (\texttt{Grules}) engine; validated end-to-end and approved for release, resolving \textbf{5} known production defects and cutting rule authoring from days to hours.}
 
-              \resumeItem{Found and resolved \textbf{8+} production defects, including a \textbf{race condition} duplicating retry jobs across three AKS replicas.}
+              \resumeItem{Found and resolved \textbf{8+} production defects, including a \textbf{race condition} duplicating retry jobs across various AKS replicas.}
           \resumeItemListEnd
 
             % POSITION 1
             \resumeSubheadingContinue
             {Associate Software Engineer --- JH AutoForge}{June 2025 -- June 2026}
             \resumeItemListStart
-              \resumeItem{One of \textbf{two founding engineers} on a greenfield AI document pipeline (\textbf{.NET}, \textbf{SQL}, \textbf{Azure OpenAI}) converting 200+ page product specs into reviewable Jira user stories, cutting analyst effort an estimated \textbf{80--90\%}; now adopted by \textbf{4+} teams.}
+              \resumeItem{One of \textbf{two founding engineers} on a greenfield AI document pipeline (\textbf{.NET}, \textbf{SQL}, \textbf{Azure OpenAI}) converting 200+ page product specs into reviewable Jira user stories, cutting analyst effort an estimated \textbf{60--70\%}; now adopted by \textbf{4+} teams.}
 
               \resumeItem{Architected the retrieval pipeline --- OCR extraction, keyword-driven chunking, cross-document contextual mapping, and batched context-scoped LLM calls --- to minimize hallucination on inputs far exceeding the model context window.}
 
@@ -137,7 +137,7 @@
         {Rhapsody Health}{Boston, MA}
             {Full Stack Software Engineering Intern}{May 2024 -- Aug 2024}
             \resumeItemListStart
-                \resumeItem{Established a \textbf{Docker} container-driven workflow, standardizing local development, simplifying the \textbf{Bitbucket} CI/CD pipeline, and improving usability of existing \textbf{Kubernetes} logging.}
+                \resumeItem{Established a \textbf{Docker} container-driven workflow, standardizing local development and simplifying the \textbf{Bitbucket} CI/CD pipeline.}
 
                 \resumeItem{Built a debounced keyword-based graph search over the component canvas, eliminating input lag during filtering.}
 
@@ -160,11 +160,11 @@
         % Project 1
         \resumeProjectHeading
         {\href{https://github.com/wderocco8/back-tab}{backtab \faExternalLink* \normalfont{| \textit{TypeScript, React, Plasmo, Chrome MV3}} }}
-        {2026 -- Present}
+        {2025 -- Present}
         \resumeItemListStart
           \resumeItem{Chrome extension reconstructing a browsing session as a navigable \textbf{directed graph}, letting users re-enter abandoned branches that linear back-button history discards.}
 
-          \resumeItem{Reconciles Chrome's \texttt{webNavigation}, \texttt{history}, and \texttt{tabs} APIs with a content-script tracker to model SPA transitions and A$\rightarrow$B$\rightarrow$A revisits the native history API collapses.}
+          \resumeItem{Reconciles \texttt{chrome.webNavigation} with an in-page \texttt{window.navigation} tracker to capture same-document SPA route changes \texttt{onCommitted} never fires for, filtering both streams so one click yields one node.}
         \resumeItemListEnd
 
         % Project 2
